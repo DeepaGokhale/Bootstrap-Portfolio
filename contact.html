@@ -35,7 +35,7 @@
         .mainDiv{
             background-color: ffffff;
             color: #778899;
-            height: 800px;
+            height: 660px;
         }
 
         .mainRow{
@@ -55,14 +55,6 @@
             margin-left: 20px;
         }
 
-        .portImage{
-            width: 200px;
-            height: 200px;
-            margin-right: 40px;
-            margin-left: 40px;
-            margin-bottom: 30px;
-        }
-
         p{
             font-size: 18px;
             font-family: Georgia, 'Times New Roman', Times, serif;        
@@ -75,7 +67,7 @@
         .title{
             color:#4aaaa5;
             /* padding-top: 30px; */
-            margin-left: 40px;
+            margin-left: 20px;
             margin-top: 30px;
         }
 
@@ -87,8 +79,9 @@
             margin-top: 20px;
         }
 
-        .nav-item{
-            margin-top: 20px;
+        #btnSubmit{
+            background-color: #4aaaa5;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -109,48 +102,26 @@
                 </div>                
             </section>
         </section>
-        <section class="row">          
+        <section class="row">
                 <div class="col"></div>
-                <div class="col mainDiv col-lg-12">                    
-                    <h3 class="title">Portfolio</h3>
-                    <hr class="dkLine">      
-
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <img class="img-thumbnail portImage" src="../Bootstrap-Portfolio/Include/images/toucan_with_Baby.jpg">
-                        </li>
-                        <li class="nav-item">
-                            <img class="img-thumbnail portImage" src="../Bootstrap-Portfolio/Include/images/Toucan3.jpg">
-                        </li>
-                        <li class="nav-item">
-
-                        </li>
-                    </ul>
-
-                    <ul class="nav">
-                        <li>
-                            <img class="img-thumbnail portImage" src="../Bootstrap-Portfolio/Include/images/African_Toucan.jpg">
-                        </li>
-                        <li>
-                            <img class="img-thumbnail portImage" src="../Bootstrap-Portfolio/Include/images/Toucan2.jpg">
-                        </li>
-                        <li>
-
-                        </li>
-                    </ul>
-
-                    <ul class="nav">
-                        <li>
-                            <img class="img-thumbnail portImage" src="../Bootstrap-Portfolio/Include/images/toucan1.jpg">
-                        </li>
-                        <li>
-                            
-                        </li>
-                        <li>
-
-                        </li>
-                    </ul>
+                <div class="col mainDiv col-lg-12">
+                    <h3 class="title">Contact</h3>
+                    <hr class="dkLine">         
+                    <label for="txtname">Name</label>         
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <label for="txtEmail">Email</label>
+                    <div class="input-group mb-3">                        
+                        <input type="text" class="form-control" id="txtEmail" placeholder="">
+                    </div>
+                    <label for="txtMessage">Message</label>
+                    <div class="input-group mb-3">                        
+                        <textarea class="form-control" id="txtMessage" rows="10"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-lg" id="btnSubmit">Submit</button>
                 </div>
+                <div class="col"></div>
         </section>
     </section>
 </body>

@@ -6,14 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/Include/main.css">
+    <title>Portfolio</title>
+    <style>
+        body
+        {
+            background-image: url("ticks.png");
+            background-repeat: repeat;        
+            margin:0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav-link{
+            margin-top: 10px;
+            color:#778899;
+        }
+        .nav-link:hover{
+            color: #4aaaa5;
+            font-weight: bolder;
+        }
+
+        .myDiv{
+            padding: 10px;
+            color: #ffffff;
+            background-color: #4aaaa5;
+        }
+
+        .mainDiv{
+            background-color: ffffff;
+            color: #778899;
+            height: 660px;
+        }
+
+        .mainRow{
+            padding-left: 0px;
+            margin-bottom: 30px;
+        }
+
+        .mainContainer{
+            background-color: #ffffff;
+        }
+
+        .mainImg{
+            width: 180px;
+            height: 160px;
+            float: left;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        p{
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;        
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #777777;
+            background-color: #ffffff;
+        }
+
+        .title{
+            color:#4aaaa5;
+            /* padding-top: 30px; */
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+
+        .dkLine{
+            border: .5px solid #778899;            
+        }
+
+        #first{
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body>
-    
-    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    
+<body>    
+    <section class="container mainContainer">
+        <section class="row mainRow justify-content-center">
+            <div class="col myDiv"><h3 class="text-left">Deepa Gokhale-Bhujle</h3></div>
+            <div class="col"></div>
+            <section class="d-flex flex-row justify-content-end">
+                <div class="col">
+                    <a class="nav-link" href="Index.html">About </a>
+                </div>
+                <div class="col">
+                    <a class="nav-link" href="portfolio.html">Portfolio </a>
+                </div>
+                <div class="col">
+                    <a class="nav-link" href="contact.html">Contact </a>
+                </div>                
+            </section>
+        </section>
+        <section class="row">
+                <div class="col"></div>
+                <div class="col mainDiv col-lg-12">
+                    <h3 class="title">About Me</h3>
+                    <hr class="dkLine">
+                    <div>
+                        <img src="../Bootstrap-Portfolio/Include/images/main.jpg" alt="main.jpg" class="img-fluid mainImg">
+                        <P id="first">
+                        Hi, I am crazy about birds and I often dream that I am a bird flying high in the sky looking down at earth! I wonder how the migration might be 
+                        and of course the bad weather snow or thunderstorms! I was in Costa Rica last December was intrigued by the the toucans.
+                        There are six species of toucans found in Costa Rica: Black-mandibled, Keel-billed, Emerald Toucanet with a dark blue throat, Yellow-eared Toucanet, 
+                        Fiery-Billed Aracari which is endemic to Costa Rica and Western Panama and the Collared Aracari in the Caribbean lowlands and Northern Pacific.
+                        </P>                            
+                        <p>The keel­billed Toucan is another bird that is easy to recognize. This species is most well­known for its beak, which is long and colorful.
+                        This Toucan is even sometimes referred to as the rainbow­billed toucan because of the progressive colored pattern on its beak. While the beak is beautiful, it is also functional; the birds use it to pick berries.</p>
+                        <p>If you are traveling within the Monteverde Cloud Forest Biological Reserve, La Selva Protected Zone & Biological Station or Tortuguero National Park, you are likely to see keel­billed Toucans traveling in small flocks.</p>     
+                        <p>Sometimes, when I know I am in Toucan territory, I like to try to listen for them rather than look for them; this species likes to sing songs, like crickets! Whether you are excited to get a glimpse of that rainbow beak, 
+                        or you’re excited to hear a Toucan sing for you, spotting this bird in the wild will surely be quite the experience.</p>     
+                        <p>Do you ever wonder to be an animal or a bird? May be a bald eagle or a hummingbird?</p>
+                    </div>
+                </div>
+                <div class="col"></div>
+        </section>
+    </section>
 </body>
 </html>
