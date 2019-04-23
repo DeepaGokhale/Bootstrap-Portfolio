@@ -6,127 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/Include/main.css">
+    <link rel="stylesheet" type="text/css" href="Include/main.css">
     <title>Portfolio</title>
-    <style>
-        body
-        {
-            background-image: url("ticks.png");
-            background-repeat: repeat;        
-            margin:0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .nav-link{
-            margin-top: 10px;
-            color:#778899;
-        }
-        .nav-link:hover{
-            color: #4aaaa5;
-            font-weight: bolder;
-        }
-
-        .myDiv{
-            padding: 10px;
-            color: #ffffff;
-            background-color: #4aaaa5;
-        }
-
-        .mainDiv{
-            background-color: ffffff;
-            color: #778899;
-            height: 660px;
-        }
-
-        .mainRow{
-            padding-left: 0px;
-            margin-bottom: 30px;
-        }
-
-        .mainContainer{
-            background-color: #ffffff;
-        }
-
-        .mainImg{
-            width: 180px;
-            height: 160px;
-            float: left;
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-
-        p{
-            font-size: 18px;
-            font-family: Georgia, 'Times New Roman', Times, serif;        
-            padding-left: 20px;
-            padding-right: 10px;
-            color: #777777;
-            background-color: #ffffff;
-        }
-
-        .title{
-            color:#4aaaa5;
-            /* padding-top: 30px; */
-            margin-left: 20px;
-            margin-top: 30px;
-        }
-
-        .dkLine{
-            border: .5px solid #778899;            
-        }
-
-        #first{
-            margin-top: 20px;
-        }
-
-        #btnSubmit{
-            background-color: #4aaaa5;
-            color: #ffffff;
-        }
-    </style>
 </head>
 <body>    
-    <section class="container mainContainer">
-        <section class="row mainRow justify-content-center">
-            <div class="col myDiv"><h3 class="text-left">Deepa Gokhale-Bhujle</h3></div>
-            <div class="col"></div>
-            <section class="d-flex flex-row justify-content-end">
-                <div class="col">
-                    <a class="nav-link" href="Index.html">About </a>
-                </div>
-                <div class="col">
-                    <a class="nav-link" href="portfolio.html">Portfolio </a>
-                </div>
-                <div class="col">
+    <nav class="navbar navbar-expand-lg col-lg-6 navbar-light mainContainer">
+        <a class="navbar-brand myDiv" href="#">Deepa Gokhale-Bhujle</a>
+        <ul class="nav justify-content-end mainNavLink">
+            <li class="nav-item">
+                <a class="nav-link" href="Index.html">About </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio </a>
+            </li>
+            <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact </a>
-                </div>                
-            </section>
-        </section>
-        <section class="row">
-                <div class="col"></div>
-                <div class="col mainDiv col-lg-12">
-                    <h3 class="title">Contact</h3>
-                    <hr class="dkLine">         
-                    <label for="txtname">Name</label>         
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-                    <label for="txtEmail">Email</label>
-                    <div class="input-group mb-3">                        
-                        <input type="text" class="form-control" id="txtEmail" placeholder="">
-                    </div>
-                    <label for="txtMessage">Message</label>
-                    <div class="input-group mb-3">                        
-                        <textarea class="form-control" id="txtMessage" rows="10"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-lg" id="btnSubmit">Submit</button>
+            </li>
+        </ul>
+    </nav>
+    <section class="row">
+            <div class="col"></div>
+            <div class="col col-lg-6 mainDiv">
+                <h3 class="title">Contact</h3>
+                <hr class="dkLine">         
+                <label for="txtname">Name</label>         
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="">
                 </div>
-                <div class="col"></div>
-        </section>
+                <label for="txtEmail">Email</label>
+                <div class="input-group mb-3">                        
+                    <input type="text" class="form-control" id="txtEmail" placeholder="">
+                </div>
+                <label for="txtMessage">Message</label>
+                <div class="input-group mb-3">                        
+                    <textarea class="form-control" id="txtMessage" rows="10"></textarea>
+                </div>
+                <button type="button" class="btn btn-lg" id="btnSubmit">Submit</button>
+            </div>
+            <div class="col"></div>
     </section>
 </body>
 <!-- Footer -->
-<footer class="page-footer font-small bg-secondary ">
+<footer class="page-footer font-small bg-secondary mainFooter">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 text-center">
         © 2019 Copyright: Deepa Gokhale-Bhujle
@@ -135,3 +56,5 @@
 </footer>
 <!-- Footer -->
 </html>
+
+
